@@ -1,0 +1,147 @@
+.main-container {
+  .files-section {
+    height: 50px;
+    .files-section__row {
+      .files-section__col {
+        .files-section__text {
+          font-size: 18px;
+          .files-section__label {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-image {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+
+    .main-image__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .info-section {
+    .info-section__header {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(0, 63, 106);
+    }
+
+    .info-section__subheader {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .info-section__content {
+      margin-top: 20px;
+
+      .info-section__credo {
+        margin: 0;
+      }
+    }
+  }
+
+  .location-section {
+    .location-section__col {
+      .map-container {
+        height: 180px;
+        .map-button {
+          top: 20px;
+          left: 20px;
+          height: 40px;
+          width: 160px;
+          color:white;
+          font-size: 14px;
+          cursor: pointer;
+          background-color: rgb(0, 63, 106);;
+        }
+      }
+
+      .location-section__standort {
+        .location-section__header {
+          margin-bottom: 10px;
+          font-size: 20px;
+          font-weight: bold;
+          color: rgb(0, 63, 106);
+        }
+
+        .location-section__subheader {
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .awards-section {
+    .awards-section__header {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(0, 63, 106);
+    }
+    .awards-section__slick {
+      .awards-section__slick-container {
+        height: 190px;
+        .awards-section__slick-img {
+          min-height: 190px;
+        }
+      }
+    }
+  }
+
+  .mobile-actions {
+    height: 50px;
+    .mobile-actions__col {
+      .mobile-actions__button {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    .main-image {
+      height: 170px;
+      .main-image__content {
+        max-width: 768px;
+      }
+    }
+
+    .location-section {
+      .location-section__col {
+        .map-container {
+          height: 320px;
+          .map-button {
+            bottom: 20px;
+            top: auto;
+            left: 50%;
+            transform: translate(-50%, 0);
+          }
+        }
+      }
+    }
+  }
+}
+
+.infoTitle {
+  font: 25px "Tibetan Machine Uni", serif;
+  text-align: center;
+  height: 50px;
+  padding: 5px 0 0 10px;
+}
+
+@media screen and (max-width: 435px) {
+  .infoTitle {
+    font-size: 20px;
+  }
+}
+
